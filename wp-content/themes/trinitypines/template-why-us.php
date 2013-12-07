@@ -7,8 +7,10 @@ require("header.php");
 ?>
 
 <div class="why-us-wrapper">
-    <div class="container">
-        <h1>Why Us?</h1>
+
+        <div class="why-us-header">
+            <p>Why Choose Trinity?</p>
+        </div>
         <div class="accordian-wrapper">
             <div id="accordion">
                 <h3>Independence<span class="glyphicon glyphicon-chevron-up"></span></h3>
@@ -99,7 +101,7 @@ require("header.php");
                 </div>
             </div>
         </div>
-    </div>
+
 </div>
 <?php
 require("footer.php");
