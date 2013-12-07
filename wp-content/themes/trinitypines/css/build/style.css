@@ -5954,3 +5954,15 @@ td.visible-print {
     display: none !important;
   }
 }
+body .navbar {
+  margin-bottom: 0px;
+}
+body .homepage-banner-wrapper {
+  background-color: green;
+}
+body .homepage-testimonial-wrapper {
+  background-color: blue;
+}
+body .homepage-available {
+  padding-top: 20px;
+}

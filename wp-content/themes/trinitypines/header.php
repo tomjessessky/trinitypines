@@ -26,16 +26,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo home_url(); ?>">Dev Site</a>
+        <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="/wp-content/images/logo.png" /></a>
       </div>
    
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse">
        <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar-nav navbar-right', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
+        <img class='hidden-xs hidden-sm' src='/wp-content/images/facebook.png' />
       </div><!-- /.navbar-collapse -->
+
     </nav>
 
-    <div id="main-container" class="container">
     
     
     
