@@ -152,6 +152,3 @@
     .on('keydown.bs.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
 }(jQuery);
-;$(document).ready(function(){
-    
-});
