@@ -17,7 +17,7 @@ require("header.php");
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="..." alt="...">
+      <img  alt="...">
       <div class="carousel-caption">
         ...
       </div>
