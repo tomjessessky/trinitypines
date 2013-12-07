@@ -95,7 +95,18 @@ require("header.php");
 </div>
 <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="http://placehold.it/350x300">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one">One Bed</a></li>
+            <li><a href="#two">Two Bed</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="one">
+                One Bedroom Layout
+            </div>
+            <div class="tab-pane" id="two">
+                Two Bedroom Layout
+            </div>
+        </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <p>We have several different floorplans at Trinity Pines.</p>
