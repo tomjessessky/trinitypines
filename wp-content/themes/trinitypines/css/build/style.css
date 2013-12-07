@@ -5957,3 +5957,6 @@ td.visible-print {
 body {
   outline: 1px solid blue;
 }
+body h1 {
+  color: red;
+}
