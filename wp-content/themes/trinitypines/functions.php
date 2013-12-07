@@ -1,66 +1,143 @@
-<?php
-add_action('after_setup_theme', 'blankslate_setup');
-function blankslate_setup()
-{
-load_theme_textdomain('blankslate', get_template_directory() . '/languages');
-add_theme_support('automatic-feed-links');
-add_theme_support('post-thumbnails');
-global $content_width;
-if ( ! isset( $content_width ) ) $content_width = 640;
-register_nav_menus(
-array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
-);
-}
-add_action('wp_enqueue_scripts', 'blankslate_load_scripts');
-function blankslate_load_scripts()
-{
-wp_enqueue_script('jquery');
-}
-add_action('comment_form_before', 'blankslate_enqueue_comment_reply_script');
-function blankslate_enqueue_comment_reply_script()
-{
-if (get_option('thread_comments')) { wp_enqueue_script('comment-reply'); }
-}
-add_filter('the_title', 'blankslate_title');
-function blankslate_title($title) {
-if ($title == '') {
-return '&rarr;';
-} else {
-return $title;
-}
-}
-add_filter('wp_title', 'blankslate_filter_wp_title');
-function blankslate_filter_wp_title($title)
-{
-return $title . esc_attr(get_bloginfo('name'));
-}
-add_action('widgets_init', 'blankslate_widgets_init');
-function blankslate_widgets_init()
-{
-register_sidebar( array (
-'name' => __('Sidebar Widget Area', 'blankslate'),
-'id' => 'primary-widget-area',
-'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-'after_widget' => "</li>",
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
-}
-function blankslate_custom_pings($comment)
-{
-$GLOBALS['comment'] = $comment;
-?>
-<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
 <?php 
+
+
+//Add thumbnail support
+add_theme_support( 'post-thumbnails' );
+
+//Add menu support and register main menu
+if ( function_exists( 'register_nav_menus' ) ) {
+  	register_nav_menus(
+  		array(
+  		  'main_menu' => 'Main Menu'
+  		)
+  	);
 }
-add_filter('get_comments_number', 'blankslate_comments_number');
-function blankslate_comments_number($count)
-{
-if (!is_admin()) {
-global $id;
-$comments_by_type = &separate_comments( get_comments( 'status=approve&post_id=' . $id ) );
-return count($comments_by_type['comment']);
-} else {
-return $count;
+
+
+// filter the Gravity Forms button type
+add_filter("gform_submit_button", "form_submit_button", 10, 2);
+function form_submit_button($button, $form){
+    return "<button class='button btn' id='gform_submit_button_{$form["id"]}'><span>Submit</span></button>";
 }
-}
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>',
+     ));
+
+
+
+add_action( 'after_setup_theme', 'bootstrap_setup' );
+ 
+if ( ! function_exists( 'bootstrap_setup' ) ):
+ 
+	function bootstrap_setup(){
+ 
+		add_action( 'init', 'register_menu' );
+			
+		function register_menu(){
+			register_nav_menu( 'top-bar', 'Bootstrap Top Menu' ); 
+		}
+ 
+		class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
+ 
+			
+			function start_lvl( &$output, $depth ) {
+ 
+				$indent = str_repeat( "\t", $depth );
+				$output	   .= "\n$indent<ul class=\"dropdown-menu\">\n";
+				
+			}
+ 
+			function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+				
+				$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+ 
+				$li_attributes = '';
+				$class_names = $value = '';
+ 
+				$classes = empty( $item->classes ) ? array() : (array) $item->classes;
+				$classes[] = ($args->has_children) ? 'dropdown' : '';
+				$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
+				$classes[] = 'menu-item-' . $item->ID;
+ 
+ 
+				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+				$class_names = ' class="' . esc_attr( $class_names ) . '"';
+ 
+				$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
+				$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
+ 
+				$output .= $indent . '<li' . $id . $value . $class_names . $li_attributes . '>';
+ 
+				$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+				$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+				$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+				$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+				$attributes .= ($args->has_children) 	    ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';
+ 
+				$item_output = $args->before;
+				$item_output .= '<a'. $attributes .'>';
+				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+				$item_output .= ($args->has_children) ? ' <b class="caret"></b></a>' : '</a>';
+				$item_output .= $args->after;
+ 
+				$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+			}
+ 
+			function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
+				
+				if ( !$element )
+					return;
+				
+				$id_field = $this->db_fields['id'];
+ 
+				//display this element
+				if ( is_array( $args[0] ) ) 
+					$args[0]['has_children'] = ! empty( $children_elements[$element->$id_field] );
+				else if ( is_object( $args[0] ) ) 
+					$args[0]->has_children = ! empty( $children_elements[$element->$id_field] ); 
+				$cb_args = array_merge( array(&$output, $element, $depth), $args);
+				call_user_func_array(array(&$this, 'start_el'), $cb_args);
+ 
+				$id = $element->$id_field;
+ 
+				// descend only when the depth is right and there are childrens for this element
+				if ( ($max_depth == 0 || $max_depth > $depth+1 ) && isset( $children_elements[$id]) ) {
+ 
+					foreach( $children_elements[ $id ] as $child ){
+ 
+						if ( !isset($newlevel) ) {
+							$newlevel = true;
+							//start the child delimiter
+							$cb_args = array_merge( array(&$output, $depth), $args);
+							call_user_func_array(array(&$this, 'start_lvl'), $cb_args);
+						}
+						$this->display_element( $child, $children_elements, $max_depth, $depth + 1, $args, $output );
+					}
+						unset( $children_elements[ $id ] );
+				}
+ 
+				if ( isset($newlevel) && $newlevel ){
+					//end the child delimiter
+					$cb_args = array_merge( array(&$output, $depth), $args);
+					call_user_func_array(array(&$this, 'end_lvl'), $cb_args);
+				}
+ 
+				//end this element
+				$cb_args = array_merge( array(&$output, $element, $depth), $args);
+				call_user_func_array(array(&$this, 'end_el'), $cb_args);
+				
+			}
+			
+		}
+ 
+	}
+ 
+endif;
+
+
+?>
