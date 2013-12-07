@@ -5954,3 +5954,6 @@ td.visible-print {
     display: none !important;
   }
 }
+body .amentities-top-right {
+  background-color: #999999;
+}
