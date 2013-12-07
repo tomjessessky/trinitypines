@@ -40,8 +40,8 @@ require("header.php");
         on china.   Many residents eat everyday, but residents are free to select from the advanced
         menu published weekly and are asked to eat a minimum of four times per month.</p>
     </div>
-    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-        <img src="http://placehold.it/350x150">
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 amentities-top-right">
+        <img src="http://placehold.it/600x400">
         <p>Fee Schedule:</p>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -91,6 +91,40 @@ require("header.php");
             parking, garbage pick-up, air conditioner, extra storage, use of whirlpool spa,
             exercise room, billiards room, craft room and on-call maintenance.
         </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <img src="http://placehold.it/350x300">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <p>We have several different floorplans at Trinity Pines.</p>
+
+        <p>Spacious floorplan options range from 630 square feet (one bedroom) to 988 square feet (two bedrooms).</p>
+         
+        <p>Some apartment homes have patios on the first floor or balconies on the second floor.</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <p>We have several different floorplans at Trinity Pines.</p>
+         
+        <p>Spacious floorplan options range from 630 square feet (one bedroom) to 988 square feet (two bedrooms).</p>
+         
+        <p>Some apartment homes have patios on the first floor or balconies on the second floor.</p>
+         
+        <p>All apartments are appointed with:</p>
+        <ul>
+            <li>Full kitchen with self-cleaning oven, stove, refrigerator, garbage disposal,
+            <li>lazy susan, and under-counter light</li>
+            <li>Full bathroom with high toilet and low threshold shower</li>
+            <li>Large, lighted, closets</li>
+            <li>Air conditioner</li>
+            <li>Cable TV (expanded channels)</li>
+            <li>Morning "check-in" button</li>
+            <li>Careline ready phone jack</li>
+            <li>Sprinkler System and smoke alarms</li>
+            <li>Storage room (in addition to basement storage)</li>
+            <li>Oak Woodwork</li>
+        </ul>
     </div>
 </div>
 
