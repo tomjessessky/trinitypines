@@ -5978,6 +5978,10 @@ body .navbar {
 body .navbar .menu-item a {
   font-family: "nevis";
 }
+body .navbar-nav li a {
+  line-height: 65px;
+  text-transform: uppercase;
+}
 body .homepage .img-bordered {
   border-right: 15px solid white;
   border-left: 15px solid #ffffff;
@@ -6014,7 +6018,6 @@ body .homepage-available {
 body .amentities-top-right {
   background-color: #999999;
 }
-<<<<<<< HEAD
 body .footer {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -6039,7 +6042,7 @@ body .footer ul li {
 }
 body .footer .center {
   text-align: center;
-=======
+}
 body .why-us-wrapper .accordian-wrapper {
   background: #f1f1f2;
 }
@@ -6075,5 +6078,4 @@ body .why-us-wrapper .glyphicon-chevron-down {
 }
 body .why-us-wrapper .glyphicon-chevron-up {
   background: #6d6e7e;
->>>>>>> ca082c5d58e24d72c479d53a6a2031d1c08d693c
 }
