@@ -1,8 +1,10 @@
 <div id="" class="container">
     <div class="row">
     	<div class="col-lg-4 col-md-4 col-xs-4">
-	    	<a href='#'>Contact</a>
-	    	<a href='#'>Employment</a>
+    		<ul>
+    		<li><a href='#'>Contact</a></li>
+	    	<li><a href='#'>Employment</a></li>
+	    	</ul>
 		</div>
 		<div class="col-lg-2 col-md-2 col-xs-2">
 			<ul>

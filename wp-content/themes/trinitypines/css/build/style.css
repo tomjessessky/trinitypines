@@ -5958,10 +5958,14 @@ body .navbar {
   margin-bottom: 0px;
 }
 body .homepage-banner-wrapper {
-  background-color: green;
+  background-color: #92c03d;
 }
 body .homepage-testimonial-wrapper {
-  background-color: blue;
+  background-color: #64c1c5;
+}
+body .homepage-testimonial-wrapper h2,
+body .homepage-testimonial-wrapper p {
+  color: white;
 }
 body .homepage-available {
   padding-top: 20px;

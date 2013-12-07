@@ -14,25 +14,18 @@ require("header.php");
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 			  </ol>
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 			    <div class="item active">
-			      <img src="/wp-content/images/older_people_2.jpeg" alt="...">
+			      <img src="/wp-content/images/slide1.png" alt="...">
 			      	<div class="carousel-caption">
 			        	...
 			      	</div>
 			    </div>
 			    <div class="item ">
-			      <img src="/wp-content/images/Old-People.jpg" alt="...">
-			      	<div class="carousel-caption">
-			        	...
-			      	</div>
-			    </div>
-			    <div class="item">
-			      <img src="/wp-content/images/older_people_2.jpeg" alt="...">
+			      <img src="/wp-content/images/slide2.png" alt="...">
 			      	<div class="carousel-caption">
 			        	...
 			      	</div>
@@ -54,12 +47,7 @@ require("header.php");
 <div id="" class="container">
 	<div class="row">
 		<div class="col-lg-7 col-md-7 col-xs-7">
-			<p class="homepage-available">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p class="homepage-available">Trinity Pines is home to people who want independent living with neighbors of a similar age. Only minutes from Interstate 94, Trinity Pines is located in beautiful Lake Mills, Wisconsin, between Madison and Milwaukee.  "The Pines" is a friendly community of carefully designed, spacious apartments and elegantly appointed facilities serving today's independent seniors.</p>
 		</div>
 		<div class="col-lg-5 col-md-5 col-xs-5">
 			<img src="/wp-content/images/Old-People.jpg" class='img-responsive' />

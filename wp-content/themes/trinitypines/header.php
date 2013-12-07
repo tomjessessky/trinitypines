@@ -19,6 +19,7 @@
   <body <?php body_class($class); ?>>
     
     <nav class="navbar navbar-default" role="navigation">
+      <div class='container'>
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,7 +35,7 @@
        <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar-nav navbar-right', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
         <img class='hidden-xs hidden-sm' src='/wp-content/images/facebook.png' />
       </div><!-- /.navbar-collapse -->
-
+      </div>
     </nav>
 
     
