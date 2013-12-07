@@ -10,6 +10,7 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'wp-content/themes/trinitypines/js/src/dropdown.js',
+					'wp-content/themes/trinitypines/js/src/carousel.js',
 					'wp-content/themes/trinitypines/js/src/script.js',
 				],
 				dest: 'wp-content/themes/trinitypines/js/build/script.js'
