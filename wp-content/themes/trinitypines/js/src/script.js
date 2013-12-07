@@ -5,4 +5,5 @@ $(document).ready(function(){
         $(this).tab('show')
     });
     
+    $('#accordion').accordion();
 });

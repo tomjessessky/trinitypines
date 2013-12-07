@@ -511,4 +511,5 @@
         $(this).tab('show')
     });
     
+    $('#accordion').accordion();
 });
