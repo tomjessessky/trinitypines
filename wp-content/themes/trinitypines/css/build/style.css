@@ -5954,17 +5954,58 @@ td.visible-print {
     display: none !important;
   }
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "nevis";
+  line-height: 1.2em;
+}
+body p,
+body ul,
+body li,
+body a {
+  font-family: "sofia";
+}
+body .logo {
+  height: 65px;
+}
 body .navbar {
   margin-bottom: 0px;
+}
+body .navbar .menu-item a {
+  font-family: "nevis";
+}
+body .homepage .img-bordered {
+  border-right: 15px solid white;
+  border-left: 15px solid #ffffff;
+}
+body .homepage p {
+  line-height: 1.8em;
+}
+body .homepage .caption {
+  margin-left: 25px;
 }
 body .homepage-banner-wrapper {
   background-color: #92c03d;
 }
+body .homepage-other-wrapper .row {
+  padding: 30px;
+}
 body .homepage-testimonial-wrapper {
-  background-color: #64c1c5;
+  background-color: #299b8c;
 }
 body .homepage-testimonial-wrapper h2,
 body .homepage-testimonial-wrapper p {
+  color: white;
+}
+body .homepage-home-wrapper {
+  background-color: #64c1c5;
+}
+body .homepage-home-wrapper h2,
+body .homepage-home-wrapper p {
   color: white;
 }
 body .homepage-available {
@@ -5972,4 +6013,29 @@ body .homepage-available {
 }
 body .amentities-top-right {
   background-color: #999999;
+}
+body .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+body .footer .bordered {
+  border-right: 1px solid #6d6e7e;
+  padding-left: 70px;
+}
+body .footer img {
+  margin: 70px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+body .footer ul {
+  list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+}
+body .footer ul li {
+  line-height: 2em;
+  color: black;
+}
+body .footer .center {
+  text-align: center;
 }
