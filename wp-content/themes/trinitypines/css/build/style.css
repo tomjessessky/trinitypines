@@ -6043,6 +6043,13 @@ body .footer ul li {
 body .footer .center {
   text-align: center;
 }
+body .why-us-wrapper .why-us-header {
+  background: #64c1c5;
+  height: 200px;
+}
+body .why-us-wrapper .why-us-header p {
+  color: white;
+}
 body .why-us-wrapper .accordian-wrapper {
   background: #f1f1f2;
 }
