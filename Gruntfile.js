@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 		less:	{
 			my_target: {
 				files: {
-					'wp-content/themes/trinitypines/build/style.css': 'wp-content/themes/trinitypines/build/style.less'
+					'wp-content/themes/trinitypines/css/build/style.css': 'wp-content/themes/trinitypines/css/src/style.less'
 				}
 			}
 		},
