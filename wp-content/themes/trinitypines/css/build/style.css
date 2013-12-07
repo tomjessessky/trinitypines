@@ -5973,3 +5973,13 @@ body .homepage-available {
 body .amentities-top-right {
   background-color: #999999;
 }
+body .why-us-wrapper .ui-accordion-header {
+  background-color: #6d6e7e;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+body .why-us-wrapper .ui-accordion-header-active {
+  background-color: #d1d2d4;
+  color: #6d6e7e;
+}
