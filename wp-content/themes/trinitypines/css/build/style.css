@@ -5973,13 +5973,39 @@ body .homepage-available {
 body .amentities-top-right {
   background-color: #999999;
 }
+body .why-us-wrapper .accordian-wrapper {
+  background: #f1f1f2;
+}
+body .why-us-wrapper #accordion {
+  width: 50%;
+  margin: auto;
+  border: 3px solid white;
+}
 body .why-us-wrapper .ui-accordion-header {
   background-color: #6d6e7e;
   color: white;
   text-transform: uppercase;
+  margin-top: 0px;
   padding: 5px 20px;
+  position: relative;
 }
 body .why-us-wrapper .ui-accordion-header-active {
   background-color: #d1d2d4;
   color: #6d6e7e;
+}
+body .why-us-wrapper .ui-accordion-content {
+  background: white;
+}
+body .why-us-wrapper .glyphicon {
+  color: white;
+  padding: 5px 40px 5px 20px;
+  position: absolute;
+  right: 0px;
+  border-left: 3px solid white;
+}
+body .why-us-wrapper .glyphicon-chevron-down {
+  background: #cdd963;
+}
+body .why-us-wrapper .glyphicon-chevron-up {
+  background: #6d6e7e;
 }

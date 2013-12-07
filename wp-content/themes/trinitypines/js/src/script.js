@@ -6,6 +6,7 @@ $(document).ready(function(){
     });
     
     $("#accordion").accordion({
+        heightStyle: "content",
         activate: function(event, ui) {
             ui.newHeader.find('span').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
             ui.oldHeader.find('span').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
@@ -13,4 +14,5 @@ $(document).ready(function(){
     });
     
     $("#accordion").accordion("option", "icons", null);
+    
 });
