@@ -93,5 +93,43 @@ body {
     	.center {
     		text-align: center;
     	}
+    
+    .why-us-wrapper {
+        .accordian-wrapper {
+            background: @tp-gray-light;
+        }
+        #accordion {
+            width: 50%;
+            margin: auto;
+            border: 3px solid white;
+        }
+        .ui-accordion-header {
+            background-color: @tp-gray-dark;
+            color: white;
+            text-transform: uppercase;
+            margin-top: 0px;
+            padding: 5px 20px;
+            position: relative;
+        }
+        .ui-accordion-header-active {
+            background-color: @tp-gray;
+            color: @tp-gray-dark;
+        }
+        .ui-accordion-content {
+            background: white;
+        }
+        .glyphicon {
+            color: white;
+            padding: 5px 40px 5px 20px;
+            position: absolute;
+            right: 0px;
+            border-left: 3px solid white;
+        }
+        .glyphicon-chevron-down {
+            background: @yellow-green;
+        }
+        .glyphicon-chevron-up {
+            background: @tp-gray-dark;
+        }
     }
 }

@@ -9,6 +9,7 @@
     <link href="<?php bloginfo('template_directory'); ?>/fonts/stylesheet.css" rel="stylesheet" media="screen">
 		<link href="<?php bloginfo('stylesheet_url');?>" type="text/css" rel="stylesheet" media="screen, projection" />
 		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/build/scripts.min.js"></script>
 		
 		
