@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 			    tasks: ['concat', 'uglify']
 			},
 			css: {
-				files: ['wp-content/themes/trinitypines/build/style.less'],
+				files: ['wp-content/themes/trinitypines/css/src/style.less'],
 				tasks: ['less', 'cssmin']
 			}
                 },
