@@ -1,0 +1,8 @@
+{
+    "require": {
+        "twitter/bootstrap": "3.0.*"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}
