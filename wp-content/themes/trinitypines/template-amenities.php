@@ -6,6 +6,22 @@ Template Name: Amenities
 require("header.php");
 ?>
 
+<div class="amenities-header-wrapper">
+    <div class="container">
+        <div class="amenities-header container">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1 col-md-5 col-sm-5 col-xs-5" style="padding-top: 40px;">
+                    <h2>AMENITIES</h2>
+                    <h2>& SERVICES</h2>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-6">
+                    <img src="/wp-content/images/best-friends.jpg" class="img-bordered amenities-best-friends" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container">
     <h2>Amenities &amp; Services</h2>
     <div class="row life-easy">
