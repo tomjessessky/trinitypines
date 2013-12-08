@@ -95,7 +95,7 @@ require("header.php");
             $742 - $889
         </div>
     </div>
-    <div class="row">
+    <div class="row dining-program">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <h2>Dining Program</h2>
             <p>Our experienced cooks pride themselves in creating a nutritionally
