@@ -147,7 +147,7 @@ require("header.php");
             <p>Oak Woodwork</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row floor-plans">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#one">One Bed</a></li>
