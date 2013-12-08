@@ -5972,15 +5972,19 @@ body a {
 body .logo {
   height: 65px;
 }
+body .img-bordered {
+  border-right: 15px solid white;
+  border-left: 15px solid #ffffff;
+}
 body .navbar {
   margin-bottom: 0px;
 }
 body .navbar .menu-item a {
   font-family: "nevis";
 }
-body .homepage .img-bordered {
-  border-right: 15px solid white;
-  border-left: 15px solid #ffffff;
+body .navbar-nav li a {
+  line-height: 65px;
+  text-transform: uppercase;
 }
 body .homepage p {
   line-height: 1.8em;
@@ -6042,20 +6046,29 @@ body .footer ul li {
 body .footer .center {
   text-align: center;
 }
-body .why-us-wrapper .why-us-header {
+body .why-us-wrapper .why-us-header-wrapper {
   background: #64c1c5;
-  height: 200px;
 }
-body .why-us-wrapper .why-us-header p {
+body .why-us-wrapper .why-us-header-wrapper h2 {
+  margin-top: 20px;
   color: white;
+}
+body .why-us-wrapper .why-us-header-wrapper .why-us-best-friends {
+  height: 300px;
 }
 body .why-us-wrapper .accordian-wrapper {
   background: #f1f1f2;
+}
+body .why-us-wrapper .accordian-wrapper h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 28px;
 }
 body .why-us-wrapper #accordion {
   width: 50%;
   margin: auto;
   border: 3px solid white;
+  background-color: white;
 }
 body .why-us-wrapper .ui-accordion-header {
   background-color: #6d6e7e;
@@ -6071,6 +6084,9 @@ body .why-us-wrapper .ui-accordion-header-active {
 }
 body .why-us-wrapper .ui-accordion-content {
   background: white;
+  padding: 25px;
+  margin-left: 0;
+  margin-right: 0;
 }
 body .why-us-wrapper .glyphicon {
   color: white;
@@ -6084,4 +6100,14 @@ body .why-us-wrapper .glyphicon-chevron-down {
 }
 body .why-us-wrapper .glyphicon-chevron-up {
   background: #6d6e7e;
+}
+body .why-us-wrapper .glyphicon-chevron-up,
+body .why-us-wrapper .glyphicon-chevron-down {
+  margin-top: -1px;
+  border: 4px solid white;
+  border-top: 0;
+  border-bottom: 0;
+  height: 38px;
+  font-size: 20px;
+  padding-top: 8px;
 }
