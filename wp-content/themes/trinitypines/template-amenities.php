@@ -140,7 +140,7 @@ require("header.php");
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <p>Cable TV (expanded channels)</p>
-            <p>Morning “check-in” button</p>
+            <p>Morning "check-in" button</p>
             <p>Careline ready phone jack</p>
             <p>Sprinkler System and smoke alarms</p>
             <p>Storage room (in addition to basement storage)</p>
