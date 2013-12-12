@@ -1,0 +1,70 @@
+/**
+Stylesheet for O'Neill Builders 
+oneillbuildersinc.com 
+Compiled by Tom Jessessky and Lauren Richards
+Copyright Badger Innovations 2013
+badgerinnovations.com 
+*/
+
+html, body {
+	height: 100%;
+}
+.banner_wrapper {
+	height: 100%;
+}
+.logo {
+	height: 100px;
+}
+.nav-ul {
+	list-style: none;
+	margin-top: 50px;
+}
+.nav-ul li {
+	display: inline;
+	font-size: 19px;
+	font-family: 'Arial';
+
+}
+.nav-ul li a {
+	color: black;
+	text-transform: uppercase;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+.nav-ul li a:hover {
+	color: blue;
+}
+
+.orbit-row-wrapper {
+	background: #090416; /* Old browsers */
+	background: -moz-linear-gradient(left,  #090416 0%, #ffffff 50%, #030207 100%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#090416), color-stop(50%,#ffffff), color-stop(100%,#030207), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #090416 0%,#ffffff 50%,#030207 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #090416 0%,#ffffff 50%,#030207 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #090416 0%,#ffffff 50%,#030207 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to right,  #090416 0%,#ffffff 50%,#030207 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090416', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+.top-bar, .top-bar-section ul, .top-bar-section li a:not(.button) {
+	background-color: white;
+}
+.top-bar-section ul {
+	margin-top: 50px;
+}
+.top-bar-section li a:not(.button) {
+	color: black;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 25px;
+}
+.top-bar-section li a:not(.button):hover {
+	color: blue;
+	background-color: white;
+}
+
+.top-bar-section li a:not(.last-item) {
+	border-right: 1px solid black;
+}
